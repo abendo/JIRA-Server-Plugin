@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}"
+                  name="Company Plugin"
+                  plugins-version="2"
+                  author="Albrit Bendo">
+    <plugin-info>
+        <description>This is my first internship project.</description>
+        <!-- In order to get connected to Jira Resources we use dynamically substituted url -->
+        <vendor name="Plugin" url="__ATLASSIAN_BASE_URL__"/> 
+        <version>1.0</version>
+        <param name="plugin-icon">images/icon.png</param>
+    </plugin-info>
+    
+<!-- List of gadgets -->
+    <gadget key="linechart-key" name="Line-Chart Gadget" location="linegadget.xml"/>
+
+    <gadget key="piechart-key" name="Pie-Chart Gadget" location="piegadget.xml"/>
+
+    <rest key="tutorial-gadget-rest-resources" path="/tutorial-gadget" version="1.0">
+        <description>REST resources.</description>
+    </rest>
+     
+<!-- Common JavaScript file and CSS -->    
+    <web-resource key="resources" name="Common Web-Resources">
+        <dependency>com.atlassian.auiplugin:aui-reset</dependency>
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+         
+        <dependency>com.atlassian.jira.gadgets:autocomplete</dependency>
+        <dependency>com.atlassian.jira.gadgets:project-filter-autocomplete-component</dependency>
+        <dependency>com.atlassian.jira.gadgets:core-gadget-resources</dependency>
+
+        <dependency>com.atlassian.jira.gadgets:dashboard-item-common-resources</dependency>
+        <dependency>com.atlassian.jira.gadgets:autocomplete</dependency>
+
+        <resource type="download" name="myPlugin.js" location="js/myPlugin.js"/>
+        <resource type="download" name="images" location="images/icon.png"/>
+ 
+        <context>atl.general</context>
+    </web-resource>
+
+<!-- Line-Chart Gadget JavaScript file-->
+    <web-resource key="mygadget-linechart" name="Line-Chart Resources">
+        <resource type="download" name="linechart.js" location="js/linechart.js"/>
+
+        <context>linechart.gadget</context>
+    </web-resource>
+
+<!-- Pie-Chart Gadget JavaScript file-->
+    <web-resource key="mygadget-piechart" name="Pie-Chart Resources">
+        <resource type="download" name="piechart.js" location="js/piechart.js"/>
+
+        <context>piechart.gadget</context>
+    </web-resource>
+
+</atlassian-plugin>
