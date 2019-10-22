@@ -1,13 +1,13 @@
-First things first:
+[ First things first: ]
 
 0. Install the Atlassian SDK
 1. Create a Hello-World Plugin project
 2. Modify the plugin
 3. Modify using QuickReload
+ 
+** You have successfully created an Atlassian Plugin! __
 
-You have successfully created an Atlassian Plugin!
-
-Here are the SDK commands you'll use immediately:
+ [ Here are the SDK commands you'll use immediately: ] 
 
 * atlas-run   -- installs this plugin into the product and starts it on localhost
 * atlas-debug -- same as atlas-run, but allows a debugger to attach at port 5005
@@ -15,7 +15,7 @@ Here are the SDK commands you'll use immediately:
 
 Full documentation is always available at:
 
-https://developer.atlassian.com/display/DOCS/Introduction+to+the+Atlassian+Plugin+SDK
+> https://developer.atlassian.com/display/DOCS/Introduction+to+the+Atlassian+Plugin+SDK
 
 The goal of this will be to create a plugin that provides gadgets. Plugin is an app that can be
 installed in JIRA software while gadget will be just the representation. 
@@ -58,8 +58,24 @@ View of what is happening:
 |___________|
 (show the data)
 
+[ Installation: ] 
 
-References:
+      0) Install the **Atlassian SDK** - the link below can be used for Linux / Mac: 
+>      https://developer.atlassian.com/server/framework/atlassian-sdk/install-the-atlassian-sdk-on-a-linux-or-mac-system/
+      
+      1) Fork my repository to a folder (i.e.: /myJiraPlugin) and go there
+      
+      2) You can compile with: **atlas-compile**
+      
+      3) You can build and wrap your plugin with: **atlas-package**
+      
+      4) You can clean the run-time generated files with: **atlas-clean** - the link below can be used for more commands:
+>      https://developer.atlassian.com/server/framework/atlassian-sdk/automatic-plugin-reinstallation-with-quickreload/
+      
+      5) To check you plugin / gadget just download the .jar file to you JIRA Software (Server) as a normal application
+      
+[ References: ]
     https://developer.atlassian.com/server/framework/atlassian-sdk/create-a-helloworld-plugin-project/
     https://developer.atlassian.com/server/framework/atlassian-sdk/modify-the-plugin/
     https://developer.atlassian.com/server/framework/atlassian-sdk/modify-the-plugin-using-quickreload/
+    https://community.atlassian.com/
