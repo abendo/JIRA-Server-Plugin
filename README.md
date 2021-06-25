@@ -1,5 +1,4 @@
 # Getting Started
-==================
 
 0. Install the Atlassian SDK
 1. Create a Hello-World Plugin project
@@ -9,7 +8,6 @@
 Congrats, you have successfully created an Atlassian Plugin!
 
 ## Command line arguments
-=====================
 
 Here are the SDK commands you'll use immediately:
 
