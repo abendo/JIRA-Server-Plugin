@@ -1,9 +1,9 @@
 # Getting Started
 
-0. Install the Atlassian SDK
-1. Create a Hello-World Plugin project
-2. Modify the plugin
-3. Modify using QuickReload
+* Install the Atlassian SDK
+* Create a Hello-World Plugin project
+* Modify the plugin
+* Modify using QuickReload
  
 Congrats, you have successfully created an Atlassian Plugin!
 
@@ -11,9 +11,9 @@ Congrats, you have successfully created an Atlassian Plugin!
 
 Here are the SDK commands you'll use immediately:
 
-* atlas-run   -- installs this plugin into the product and starts it on localhost
-* atlas-debug -- same as atlas-run, but allows a debugger to attach at port 5005
-* atlas-help  -- prints description for all commands in the SDK
+* atlas-run   - installs this plugin into the product and starts it on localhost
+* atlas-debug - same as atlas-run, but allows a debugger to attach at port 5005
+* atlas-help  - prints description for all commands in the SDK
 
 Full documentation is always available at this [link](https://developer.atlassian.com/display/DOCS/Introduction+to+the+Atlassian+Plugin+SDK).
 
@@ -39,25 +39,6 @@ In `.js` folder are the javascript files where all the functions are implemented
 `linechart.js` has specific code for 'linegadget.xml' and same for the other. Both files are commented.
 
 `java` files are generated when you create your project.
-
-View of what is happening:
-
-|===========|                   |===========|
-|           |       Data        |           |
-|           |     <-------      |           |
-|           |     ------->      |           |
-|___________|       Req         |___________|
-(jira server)                  (jira database)
-      |
-      |
-      |
-      |
-|===========|
-|           |
-|           |
-|           |
-|___________|
-(show the data)
 
 ## Installation
 
