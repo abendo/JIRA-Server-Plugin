@@ -18,12 +18,10 @@ Here are the SDK commands you'll use immediately:
 Full documentation is always available at this [link](https://developer.atlassian.com/display/DOCS/Introduction+to+the+Atlassian+Plugin+SDK).
 
 ## Motivation
-====================
 
 The goal of this will be to create a plugin that provides some gadgets. Plugin is an app that can be installed in JIRA software while gadget will be just the representation. 
 
 ## Description
-=====================
 
 This is a JIRA Server plugin.
 
@@ -62,7 +60,6 @@ View of what is happening:
 (show the data)
 
 ## Installation
-======================
 
 * Install the **Atlassian SDK** - the [link](https://developer.atlassian.com/server/framework/atlassian-sdk/install-the-atlassian-sdk-on-a-linux-or-mac-system/) can be used for Linux / Mac: 
 * Fork my repository to a folder (i.e.: /myJiraPlugin) and go there
@@ -72,7 +69,7 @@ View of what is happening:
 * To check you plugin / gadget just download the .jar file to you JIRA Software (Server) as a normal application
       
 ## References
-==================
+
 * [Ref_1](https://developer.atlassian.com/server/framework/atlassian-sdk/create-a-helloworld-plugin-project/)
 * [Ref_2](https://developer.atlassian.com/server/framework/atlassian-sdk/modify-the-plugin/)
 * [Ref_3](https://developer.atlassian.com/server/framework/atlassian-sdk/modify-the-plugin-using-quickreload/)
